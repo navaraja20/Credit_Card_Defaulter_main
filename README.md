@@ -2,7 +2,7 @@
 Internship for Ineuron
 
 ## Live Project Deployment
-https://credit-card-default-prediction-com.onrender.com
+https://credit-card-default-prediction-by.onrender.com
 
 
 ## Overview
