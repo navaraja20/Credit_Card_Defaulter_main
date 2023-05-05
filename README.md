@@ -2,7 +2,7 @@
 Internship for Ineuron
 
 ## Live Project Deployment
-https://credit-card-fraud-detection-y6m6.onrender.com/
+https://credit-card-default-prediction-com.onrender.com
 
 
 ## Overview
