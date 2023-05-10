@@ -11,10 +11,16 @@
   
 </head>
 <style>
-body  {
-	background-image: url(https://images7.alphacoders.com/638/thumb-1920-638841.png);
-	background-size: 100%;
-}
+img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+      filter: blur(4px);
+      }
 .result {
     margin: auto;
     width: 35%;
@@ -26,7 +32,7 @@ button{
   margin:0 auto;
   cursor: pointer;
   padding: 0 .1em;
-  --c: #f1f7ec; /* the color */
+  --c: #0835b1; /* the color */
   --b: 5px;    /* border length*/
   --d: 20px;    /* the cube depth */
   
@@ -65,13 +71,13 @@ button:hover{
 }
 h2{
 	font-family: system-ui, sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   margin:0 auto;
   cursor: pointer;
   padding: 0 .1em;
-  --c: #05dceb; /* the color */
-  --b: 4px;    /* border length*/
-  --d: 18px;    /* the cube depth */
+  --c: #7a0808; /* the color */
+  --b: 5px;    /* border length*/
+  --d: 15px;    /* the cube depth */
   
   --_s: calc(var(--d) + var(--b));
   
@@ -109,7 +115,8 @@ h2:hover{
 </style>
 <body>
  <div class="predict">
-	<h2 style="margin: auto; width: 35%; padding: 1%; border: 2px solid; text-align: center;">Credit Card Defaulter Prediction</h2>
+	<h2 style="margin: auto; width: 60%; padding: 1%; border: 2px solid; font-family: 'Times New Roman', Times, serif; text-align: center;">Credit Card Defaulter Prediction</h2>
+	<img class="background" src="https://im.indiatimes.in/content/2022/Feb/shutterstock_credit-card-calculation_6201061c573f1.jpg" alt="Aleq">
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
